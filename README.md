@@ -1,9 +1,10 @@
 #GA-Labels
 [description]
 ##Usage
+Add ``` class="ga-track-event" ``` to all elements you want tracked.
+
 Add the following code inbetween your `<head>` tags: (customise UA-XXXXX-X)
 
-Add ``` class="ga-track-event" ``` to all elements you want tracked.
  ```javascript
   <script type="text/javascript">
   var _gaq = _gaq || [];
