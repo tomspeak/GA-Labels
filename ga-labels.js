@@ -20,7 +20,5 @@ $(document).click(function(e) {
     	} else { 
     		_gaq.push(['_trackEvent', category, action, '', '', nonInteraction]);
     	}
-
-    	console.log(['_trackEvent', category, action, '', '', nonInteraction]);
 	}
 });
