@@ -3,7 +3,7 @@ $(document).click(function(e) {
 
 	if(clickedElement.hasClass('ga-track-event')) {
 
-		var category = clickedElement.attr('data-ga-cat');
+	var category = clickedElement.attr('data-ga-cat');
     	var action = clickedElement.attr('data-ga-act');
     	var label = clickedElement.attr('data-ga-lab');
     	var value = clickedElement.attr('data-ga-val');
