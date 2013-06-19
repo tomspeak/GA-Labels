@@ -18,11 +18,11 @@ Add the following code inbetween your `<head>` tags: (customise UA-XXXXX-X)
   ```
   
 ##Types of Labels
- * Category     (required)
- * Action       (required)
- * Label        (optional)
- * Value        (optional)
- * Interaction  (optional)(default: true)
+ * Category     (required) data-ga-cat=""
+ * Action       (required) data-ga-act=""
+ * Label        (optional) data-ga-label=""
+ * Value        (optional) data-ga-value=""
+ * Interaction  (optional)(default: true) data-ga-int=""
  
 ##Adding Labels
 ######Link Example
