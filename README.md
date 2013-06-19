@@ -2,6 +2,8 @@
 [description]
 ##Usage
 Add the following code inbetween your `<head>` tags: (customise UA-XXXXX-X)
+
+Add ``` class="ga-track-event" ``` to all elements you want tracked.
  ```javascript
   <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -18,11 +20,11 @@ Add the following code inbetween your `<head>` tags: (customise UA-XXXXX-X)
   ```
   
 ##Types of Labels
- * Category     (required) data-ga-cat=""
- * Action       (required) data-ga-act=""
- * Label        (optional) data-ga-label=""
- * Value        (optional) data-ga-value=""
- * Interaction  (optional)(default: true) data-ga-int=""
+ * Category     (required) ``` data-ga-cat="" ```
+ * Action       (required) ``` data-ga-act="" ```
+ * Label        (optional) ``` data-ga-lab="" ```
+ * Value        (optional) ``` data-ga-val="" ```
+ * Interaction  (optional)(default: true) ``` data-ga-int="" ```
  
 ##Adding Labels
 ######Link Example
