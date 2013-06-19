@@ -30,6 +30,7 @@ Add the following code inbetween your `<head>` tags: (customise UA-XXXXX-X)
  <a href="/home/" class="ga-track-event" data-ga-event="link clicked" data-ga-cat="home">Home</a> 
  ```
 ######Download Example
+```html
  <a href="/GA-Labels.pdf" class="ga-track-event" data-ga-event="Download" data-ga-cat="GA-Labels PDF" data-ga-value="5" data-ga-int="false">Download PDF</a> 
-
+```
  
