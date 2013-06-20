@@ -22,11 +22,11 @@ Add ``` class="ga-track-event" ``` to all elements you want tracked.
   ```
   
 ##Types of Labels
- * Category     (required) ``` data-ga-cat="" ```
- * Action       (required) ``` data-ga-act="" ```
- * Label        (optional) ``` data-ga-lab="" ```
- * Value        (optional) ``` data-ga-val="" ```
- * Interaction  (optional)(default: true) ``` data-ga-int="" ```
+ * Category     (string)(required) ``` data-ga-cat="" ```
+ * Action       (string)(required) ``` data-ga-act="" ```
+ * Label        (string)(optional) ``` data-ga-lab="" ```
+ * Value        (int) (optional) ``` data-ga-val="" ```
+ * Interaction  (boolean) (optional)(default: true) ``` data-ga-int="" ```
  
 ##Adding Labels
 ######Link Example
