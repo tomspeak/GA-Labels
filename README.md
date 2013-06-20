@@ -1,5 +1,7 @@
 #GA-Labels
-[description]
+
+Add ga-labels.js to your project so that you can easily track events and send them to Google Analytics. You can fully customise what is tracked and how it is tracked. You will set categories, actions and labels yourself allowing to set up what ever tracking neccesary for your website i.e clicks/downloads.
+
 ##Usage
 Add the following code inbetween your `<head>` tags: (customise UA-XXXXX-X)
 
