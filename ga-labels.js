@@ -1,26 +1,16 @@
-$(document).click(function(e) {
-	var clickedElement = $(e.target);
+$(function() {
+    $(document.body).on('click', '.ga-track-event', function(ev) {
+        var clickedElement = $(this),
+            category = clickedElement.attr('data-ga-cat'),
+            action = clickedElement.attr('data-ga-act'),
+            label = clickedElement.attr('data-ga-lab'),
+            value = clickedElement.attr('data-ga-val'),
+            nonInteraction = clickedElement.attr('data-ga-int');
 
-	if(clickedElement.hasClass('ga-track-event')) {
+        if(nonInteraction === undefined) {
+            nonInteraction = true;
+        }
 
-		var category = clickedElement.attr('data-ga-cat');
-    	var action = clickedElement.attr('data-ga-act');
-    	var label = clickedElement.attr('data-ga-lab');
-    	var value = clickedElement.attr('data-ga-val');
-    	var nonInteraction = clickedElement.attr('data-ga-int');
-
-    	if(typeof(nonInteraction) === 'undefined') { var nonInteraction = true; }// DEFAULT TRUE = ignore the bounce rate calculation.
-
-    	if(label && value) {
-    		_gaq.push(['_trackEvent', category, action, label, value, nonInteraction]);
-    	} else if(label) {
-    		_gaq.push(['_trackEvent', category, action, label, '', nonInteraction]);
-    	} else if(value) {
-    		_gaq.push(['_trackEvent', category, action, '', value, nonInteraction]);
-    	} else { 
-    		_gaq.push(['_trackEvent', category, action, '', '', nonInteraction]);
-    	}
-
-    	console.log(['_trackEvent', category, action, '', '', nonInteraction]);
-	}
+        _gaq.push(['_trackEvent', category, action, label, value, nonInteraction]);
+    });
 });
